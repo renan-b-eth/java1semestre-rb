@@ -2,6 +2,8 @@ package teste;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 import br.com.fiap.beans.Produto;
 
 public class main {
@@ -10,7 +12,7 @@ public class main {
 		Scanner in = new Scanner(System.in);
 		Produto p = new Produto();
 
-		p.setMarcaProduto(in.nextLine());
+		p.setMarcaProduto(JOptionPane.showInputDialog("Digite o Tipo de Produto:"));
 		p.setQuantidadeProduto(in.nextInt());
 		p.setTipoProduto(in.nextLine());
 		p.setValorProduto(in.nextDouble());
